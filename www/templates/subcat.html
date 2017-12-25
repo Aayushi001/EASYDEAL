@@ -1,0 +1,47 @@
+<ion-header-bar align-title = "center" class="bar bg-green-light">
+  <h1 class = "title white">Add A Product</h1>
+</ion-header-bar>
+
+<h4 class="dark-green" style="margin-top: 80px !important; text-align: center">Fill The Fields Correctly</h4>
+<div class = "list" style="margin-top: 10px;">
+  <label class = "item item-input item-floating-label">
+    <span class = "input-label">Product Name</span>
+    <input type = "text" placeholder = "Product Name" />
+  </label>
+
+  <label class = "item item-input item-floating-label">
+    <span class = "input-label">Minimum Order Quantity</span>
+    <input type = "number" placeholder = "Minimum Order Quantity" />
+  </label>
+
+  <label class = "item item-input item-floating-label">
+    <span class = "input-label">MRP (in Rs)</span>
+    <input type = "number" placeholder = "MRP (in Rs)" />
+  </label>
+
+  <label class = "item item-input item-floating-label">
+    <span class = "input-label">Wholesale Price (in Rs)</span>
+    <input type = "number" placeholder = "Wholesale Price (in Rs)" />
+  </label>
+
+
+  <label class = "item item-input item-floating-label">
+    <span class = "input-label">Description</span>
+    <textarea placeholder = "Description (optional)" ></textarea>
+  </label>
+
+  <div ng-controller="CameraCtrl">
+    <button class="button button-assertive" ng-click="takePicture()">
+      Take Photo
+    </button>
+    <button class="button button-assertive" ng-click="getPicture()">
+      Choose Photo
+    </button>
+  </div>
+
+</div>
+<img ng-src={{ fileName }}>
+
+<div class = "bar bar-footer bg-green-light">
+  <h1 class = "title white">Save The Changes &nbsp; <i class="icon ion-checkmark-round white"></i></h1>
+</div>

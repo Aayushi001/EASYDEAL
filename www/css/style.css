@@ -1,1 +1,89 @@
-/* Empty. Add your own CSS if you like */
+/*** GENERAL ***/
+a{
+  text-decoration: none;
+}
+
+
+.size-20{
+  font-size: 20px;
+}
+
+.margin-t-3{
+  margin-top: 3px;
+}
+
+.margin-t-10{
+  margin-top: 10px;
+}
+
+.margin-t-20{
+  margin-top: 20px;
+}
+
+.margin-t-30{
+  margin-top: 30px;
+}
+
+.margin-b-30{
+  margin-bottom: 30px;
+}
+
+.button-google{
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.button-fb{
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.button-green-dark{
+  background-color: #2E8B57;
+  color: #fff;
+}
+
+.button-green-light{
+  background-color: #1fc0a0;
+  color: #fff;
+}
+.light-green{
+ color: #1fc0a0;
+}
+
+.dark-green{
+  color: #2E8B57;
+}
+
+.bg-green-dark{
+  background-color: #2E8B57;
+  color: #fff;
+}
+
+.bg-green-light{
+  background-color: #1fc0a0;
+  color: #fff;
+}
+
+.white, .white:hover {
+  color: #fff !important;
+}
+
+
+
+.help-block{
+  color:red;
+}
+
+
+/*** SIGN IN PAGE ***/
+.authentication_btn{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.login_btn:hover, .login_btn:active{
+  background-color: #2E8B57;
+  color: #fff;
+}

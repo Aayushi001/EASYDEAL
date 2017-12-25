@@ -1,0 +1,46 @@
+
+<link rel="stylesheet" href="../css/style.css">
+<ion-modal-view>
+  <!--<ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>-->
+
+  <ion-content style="overflow-y: hidden;">
+    <h2 class="text-center margin-b-10" style="margin-top:25px; color:#1fc0a0">Easy<span style="color: #2E8B57">Deal</span></h2>
+   <!-- <h4 class="text-center margin-b-20" style="color: darkgrey">Make A Free Account!</h4>-->
+    <form name="signupForm" novalidate>
+      <div class = "list">
+        <label class = "item item-input item-floating-label" ng-class="{ 'has-error' : signupForm.fullname.$invalid && !signupForm.fullname.$pristine }">
+          <span class = "input-label" style="font-size: 20px; color: slategray">Full Name</span>
+          <input name="fullname" type = "text" style="font-size: 18px;" ng-model="signup.fullname" placeholder = "Full Name" required />
+          <p ng-show="signupForm.fullname.$invalid && !signupForm.fullname.$pristine" class="help-block error-statement">Your name is required.</p>
+        </label>
+
+
+        <label class = "item item-input item-floating-label" ng-class="{ 'has-error' : signupForm.email.$invalid && !signupForm.email.$pristine }">
+          <span class = "input-label" style="font-size: 20px; color: slategray">Email</span>
+          <input name="email" type = "email" style="font-size: 18px;" ng-model="signup.email" placeholder = "Email" required />
+          <p ng-show="signupForm.email.$invalid && !signupForm.email.$pristine" class="help-block error-statement">Enter a valid email.</p>
+        </label>
+
+        <label class = "item item-input item-floating-label" ng-class="{ 'has-error' : signupForm.phone.$invalid && !signupForm.phone.$pristine }">
+          <span class = "input-label" style="font-size: 20px; color: slategray">Phone No.</span>
+          <input name="phone" type = "number" style="font-size: 18px;" ng-model="signup.phone" placeholder = "Phone No." ng-minlength="10" ng-maxlength="11" required />
+          <p ng-show="signupForm.phone.$invalid && !signupForm.phone.$pristine" class="help-block error-statement">Enter valid phone no.</p>
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-green-light login_btn" style="border-radius: 10px;" ng-click="doSignup()">Sign Up</button>
+        </label>
+
+      </div>
+      <hr>
+      <h4 class="margin-t-20 text-center" style="color: darkgrey">OR</h4>
+      <div class="authentication_btn">
+        <button class="button button-block button-fb" style="border-radius: 10px;" ng-controller="FbCtrl" ng-click="FBLogin()"><i class="icon ion-social-facebook"></i>&nbsp; &nbsp; Join With Facebook </button>
+        <button class="button button-block button-google" style="border-radius: 10px;" ng-click="googleSignIn()"><i class="icon ion-social-google-outline"></i>&nbsp; &nbsp; Join With Google </button>
+      </div>
+    </form>

@@ -1,0 +1,32 @@
+<ion-header-bar align-title = "center" class = "bar bg-green-light">
+  <h1 class = "title white">Select A Category</h1>
+</ion-header-bar>
+
+<ion-view view-title="Categories" ng-controller="CategoriesCtrl">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="category in categories" ng-click="showSubcat(category.id)" class="dark-green" >
+        {{category.name}}
+        <div class="item-icon-right">
+          <i class="icon ion-chevron-right dark-green" style="font-size: 16px !important;"></i>
+        </div>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+<!--<div class = "list">
+  <div class = "item">Beauty & Perfumes</div>
+  <div class = "item">Books & Stationary</div>
+  <div class = "item">Computers</div>
+  <div class = "item">Electronics & Appliances</div>
+  <div class = "item">Fabric</div>
+  <div class = "item">Fashion</div>
+  <div class = "item">Hardware</div>
+  <div class = "item">Home Decor</div>
+  <div class = "item">Mobiles & Tablets</div>
+  <div class = "item">Sports & Fitness</div>
+  <div class = "item">Watches</div>
+</div>
+-->

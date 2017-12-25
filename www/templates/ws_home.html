@@ -1,0 +1,83 @@
+
+  <ion-side-menus enable-menu-with-back-views="false">
+
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar bg-green-light">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon-round white"  menu-toggle="left">
+          </button>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear  ion-android-more-vertical white" menu-toggle="right">
+          </button>
+        </ion-nav-buttons>
+
+      </ion-nav-bar>
+      <ion-nav-view name="menuContent"></ion-nav-view>
+
+      <div class = "card" style="margin-top: 100px;">
+        <div class = "item item-text-wrap">
+          <h1 class="dark-green text-center" >THIS IS <br> WHOLESALER's DASHBOARD <br> SCREEN</h1>
+        </div>
+      </div>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar bg-green-light">
+        <h1 class="title white">EasyDeal</h1>
+      </ion-header-bar>
+      <ion-content class="has-header bg-green-light">
+        <ion-list class="bg-green-light">
+          <ion-item class="bg-green-light" menu-close ng-click="showAddProduct()">
+            Add A Product
+          </ion-item>
+          <ion-item class="bg-green-light" menu-close ng-click="login()">
+            New Offer
+          </ion-item>
+          <ion-item class="bg-green-light" menu-close ng-click="signup()">
+            Contact Us
+          </ion-item>
+          <ion-item class="bg-green-light" menu-close ng-click="login()">
+            Help
+          </ion-item>
+
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+
+    <ion-side-menu side="right">
+      <ion-header-bar class="bar bg-green-light">
+        <h1 class="title white">EasyDeal</h1>
+      </ion-header-bar>
+      <ion-content class="has-header bg-green-light">
+        <ion-list class="bg-green-light">
+          <ion-item class="bg-green-light " menu-close ng-click="login()">
+            <i class="icon ion-ios-cart-outline white size-20"></i> &nbsp;&nbsp; My Orders
+          </ion-item>
+          <ion-item class="bg-green-light" menu-close ng-click="signup()">
+            <i class="icon ion-ios-book-outline white size-20"></i> &nbsp;&nbsp; My Catalog
+          </ion-item>
+          <ion-item class="bg-green-light " menu-close ng-click="login()">
+            <i class="icon ion-ios-star-outline white size-20"></i>  &nbsp;&nbsp;	My Offers
+          </ion-item>
+          <ion-item class="bg-green-light" menu-close ng-click="signup()">
+            <i class="icon ion-ios-person-outline white size-20"></i> &nbsp;&nbsp;  My Profile
+          </ion-item>
+
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+
+
+  </ion-side-menus>
+
+
+
+
+
+
+

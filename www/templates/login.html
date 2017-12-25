@@ -1,25 +1,34 @@
 <ion-modal-view>
-  <ion-header-bar>
+  <!--<ion-header-bar>
     <h1 class="title">Login</h1>
     <div class="buttons">
       <button class="button button-clear" ng-click="closeLogin()">Close</button>
     </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
+  </ion-header-bar>-->
+
+  <ion-content style="overflow-y: hidden;">
+    <h2 class="text-center margin-b-10" style="margin-top:100px; color:#1fc0a0">Easy<span style="color: #2E8B57">Deal</span></h2>
+    <h4 class="text-center margin-b-30" style="color: darkgrey">Please Sign in!</h4>
+    <form>
+      <div class = "list">
+        <label class = "item item-input item-floating-label">
+          <span class = "input-label" style="font-size: 20px; color: slategray">Email</span>
+          <input type = "text" ng-model="login.email" style="font-size: 18px;" placeholder = "Email" />
         </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
+
+        <label class = "item item-input item-floating-label">
+          <span class = "input-label" style="font-size: 20px; color: slategray">Password</span>
+          <input type = "password" ng-model="login.password" style="font-size: 18px;" placeholder = "Password" />
+
         </label>
+
         <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
+          <button class="button button-block button-green-light login_btn" style="border-radius: 10px;" ng-click="doLogin()">Log in</button>
+          <p class="text-center"><a href="#">Forgot Password?</a></p>
         </label>
+
       </div>
+      <hr>
+      <h4 class="margin-t-20 text-center" style="color: darkgrey">Don't have an account?<button class=" button button-positive button-clear" ng-click="showSignup()" style="vertical-align: baseline;">Sign Up</button></h4>
+
     </form>
-  </ion-content>
-</ion-modal-view>
